@@ -1,0 +1,389 @@
+@font-face {
+	font-family: 'Lato';
+	src: url('https://fonts.googleapis.com/css?family=Lato:400,700');
+}
+@font-face {
+	font-family: 'Big John';
+	src: url('../font/BIG JOHN-webfont.woff');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Slim Joe';
+	src: url('../font/slim_joe.woff');
+	font-weight: normal;
+	font-style: normal;
+
+}
+html {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+body{
+	margin: auto;
+	background-color: #f9f9f9;
+	font-family: "Lato", sans-serif;
+	color: #ffffff;
+	font-size: 16px;
+	line-height: 25px;
+	font-weight: 400;
+	box-sizing: border-box;
+
+}
+/* Backgrounds*/
+#f-hero{
+	 background: url("../asset/background/computer.png") no-repeat center #3c4955;
+	 background-size: cover;
+	 height: 650px;
+	 text-align: center;
+ }
+#porfolio{
+	height: 1050px;
+}
+#about{
+	 background: url("../asset/background/men-computerp.png") no-repeat center #717a83;
+	 height: 500px;
+}
+#contact{
+	height: 566px;
+}
+#social-block{
+	background: #3c4955;
+	height: 201px;
+}
+.ba-width-section{
+	width: 1140px;
+	margin: auto;
+	position: relative;
+
+}
+
+
+/* buttons */
+.ba-links{
+	font-size: 16px;
+	font-weight: 700;
+}
+.ba-links:hover{color: #48bf72;}
+
+.ba-button-lowercase li{
+	font-size: 16px;
+	font-weight: 700;
+	text-align: center;
+	margin:  0 5px;
+	display: inline-block;
+}
+.ba-button-lowercase--gray{
+	color: #000000;
+	background-color: #eaeaea;
+	padding: 9px 15px;
+	border-radius: 2px;
+}
+.ba-button-lowercase--active, .ba-button-lowercase--gray:hover{
+	background-color: #48bf72;
+	color: #ffffff;
+}
+.ba-button-uppercase{
+	font-size: 14px;
+	text-transform: uppercase;
+	padding: 15px 20px;
+	border-radius: 3px;
+	font-weight: 800;
+}
+.ba-button-uppercase--green{
+	color: #48bf72;
+	border: 2px solid #48bf72
+}
+.ba-button-uppercase--dark-blue{
+	color: #3c4955;
+	border: 2px solid #3c4955
+}
+.ba-button-uppercase:hover{
+	background-color: #ffffff;
+}
+.ba-button-uppercase__envoyer{
+	width: 100%;
+	border: 2px solid #48bf72;
+}
+.ba-button-uppercase__envoyer:hover{
+	width: 100%;
+	background-color: #ffffff;
+	color: #48bf72;
+}
+
+
+
+/* header - block*/
+.ba-hero__header{
+	height: 100px;
+	padding-top: 36px;
+	position: relative;
+}
+.ba-header-menu {
+	position: absolute;
+	right: 0;
+	top: 50%;
+}
+/* header menu*/
+.ba-header-menu__links{width: 155px}
+
+.ba-header-menu__links:last-of-type{
+	width: 115px;
+	text-align: right;
+}
+.ba-header-menu__links:before{
+	content: url("../asset/sep.png");
+	float: left;
+}
+.ba-header-menu__links:first-of-type:before{
+	content: none;
+}
+.ba-header-menu__links:hover{
+	color: #48bf72;
+}
+
+.ba-header__info{
+	margin-top: 157px;
+	margin-bottom: 50px;
+	text-transform: uppercase;
+}
+.ba-header__info h1{
+	font-family: "Big John", sans-serif;
+	font-size: 46px;
+	font-weight: 400;
+}
+.ba-header__info h2{
+	font-family: "Slim Joe", sans-serif;
+	font-size: 30px;
+	line-height: 50px;
+	margin: 0;
+}
+
+
+/* portfolio - block*/
+.ba-portfolio-menu{
+	text-align: center;
+	margin-top: 90px;
+	margin-bottom: 50px;
+}
+.ba-portfolio-container{
+	height: 780px;
+	display: flex;
+	display: -webkit-flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	align-content: space-between;
+	margin: auto;
+}
+.ba-portfolio-container__item{
+	border-radius: 7px;
+	overflow: hidden;
+	display: block;
+	vertical-align: middle;
+    position: relative;
+
+}
+.ba-portfolio-container__item img{
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	object-fit: cover;
+	height: 100%;
+	width: 100%;
+}
+#item1{height: 305px; width: 450px}
+#item2{height: 305px; width: 650px}
+#item3{height: 440px; width: 650px}
+#item4{height: 440px; width: 450px}
+
+.ba-portfolio-item--overlay{
+	background-color: rgba(72, 191, 114, 0.9);
+	visibility: hidden;
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	text-align: center;
+}
+.ba-portfolio-container__item:hover .ba-portfolio-item--overlay{
+	visibility: visible;
+}
+.ba-about-container__name{
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}
+/* about - block */
+.ba-about-container{
+	 float: right;
+     width: 416px;
+	 position: relative;
+	 top: 89px;
+	 right: 135px;
+	 margin: auto;
+}
+.ba-about-container__name{
+	font-size: 30px;
+	font-weight: 700;
+	margin: 0;
+}
+.ba-about-container__skills{
+	font-weight: 400;
+	font-size: 22px;
+	margin-top: 10px;
+	margin-bottom: 24px;
+}
+.ba-about-container__name+p{
+	font-size: 16px;
+	font-weight: 400;
+	margin: 15px 0;
+}
+.ba-about-container__button{
+	margin-top: 30px;
+}
+
+/* contact - block*/
+.ba-contact-container{
+	width: 700px;
+	margin: 50px auto;
+}
+.ba-contact-container__title{
+	font-family: "Big John", sans-serif;
+	font-size: 26px;
+	color: #48bf72;
+	text-transform: uppercase;
+	text-align: center;
+	margin:  55px 0;
+}
+.ba-contact-form{
+	border-radius: 3px;
+	border: 2px solid #3c4955;
+	font-family: Lato, sans-serif;
+	font-weight: 700;
+	padding: 15px 74px ;
+	margin-bottom: 30px;
+	outline: none;
+	color: #3c4955;
+	width: 700px;
+	height: 230px;
+}
+.ba-contact-form[type]{
+	width: 335px;
+	height: 50px;
+}
+.ba-contact-form:nth-child(2){
+	float: right;
+}
+[type="text"]{
+	background: url("../asset/contct-form/icon-user.png") no-repeat 0 center  #f1f1f1;
+}
+[type="email"]{
+	background: url("../asset/contct-form/icon-email.png") no-repeat 0 center  #f1f1f1;
+}
+textarea{
+	background: url("../asset/contct-form/icon-message.png") no-repeat 0 center  #f1f1f1;
+	resize: none;
+}
+/*footer*/
+
+.ba-copyright{
+	float: left;
+	margin: 90px;
+}
+.ba-icon{
+	float: right;
+	width: 317px;
+	display: flex;
+	justify-content: space-between;
+	margin-top: 74px;
+}
+.ba-icon a{
+	width: 49px;
+    height: 55px;
+	position: relative;
+}
+.ba-cosial_twitter{background: url("../asset/social/polygon_twitter.png");}
+.ba-cosial_linkedin{background: url("../asset/social/polygon_linkedin.png");}
+.ba-cosial_behance{background: url("../asset/social/polygon_behance.png");}
+.ba-cosial_dribbble{background: url("../asset/social/polygon_dribbble.png");}
+
+[class*=ba-cosial] img{
+	position: absolute;
+	margin:auto;
+	top:0;
+	bottom:0;
+	left:0;
+	right:0
+ }
+[class*=ba-cosial]:hover {
+	background-image: url("../asset/social/polygon_hover.png");
+	background-blend-mode: normal
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Typography */
+a,
+address,
+input[type="submit"],
+input[type="button"],
+button{
+	text-decoration: none;
+	color: inherit;
+	outline: none;
+	background: none;
+    font-style: normal;
+
+}
+input[type="submit"],
+input[type="button"],
+button,
+.ba-button{
+	display: inline-block;
+}
+input[type="submit"]:hover,
+input[type="button"]:hover,
+button:hover,
+.ba-button:hover{
+
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="tel"],
+textarea,
+select {
+
+	-webkit-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	-moz-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="number"]:focus,
+input[type="tel"]:focus,
+textarea:focus,
+select:focus {
+
+}
+textarea {
+
+}
